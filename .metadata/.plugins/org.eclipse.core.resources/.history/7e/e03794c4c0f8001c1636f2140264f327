@@ -1,0 +1,9 @@
+package com.douglas.notifica;
+
+public class EnvioSMS {
+	
+	public void enviar() {
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.douglas.notifica;
+
+public class envioEmail {
+
+}

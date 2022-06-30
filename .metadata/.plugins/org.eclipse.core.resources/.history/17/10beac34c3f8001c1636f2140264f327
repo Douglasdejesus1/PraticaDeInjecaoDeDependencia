@@ -1,0 +1,29 @@
+package com.douglas.model;
+
+import java.math.BigDecimal;
+
+public class Atendimento {
+	
+	public String descricaoConsulta;
+	public BigDecimal preco;
+	public Atendimento(String descricaoConsulta, BigDecimal preco) {
+		super();
+		this.descricaoConsulta = descricaoConsulta;
+		this.preco = preco;
+	}
+	public String getDescricaoConsulta() {
+		return descricaoConsulta;
+	}
+	public void setDescricaoConsulta(String descricaoConsulta) {
+		this.descricaoConsulta = descricaoConsulta;
+	}
+	public BigDecimal getPreco() {
+		return preco;
+	}
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
+	
+	
+
+}

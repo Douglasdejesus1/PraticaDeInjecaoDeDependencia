@@ -1,0 +1,7 @@
+package com.douglas.notifica;
+
+public interface Envio {
+	
+	void notifica(Tutor tutor, Animal ani)
+
+}

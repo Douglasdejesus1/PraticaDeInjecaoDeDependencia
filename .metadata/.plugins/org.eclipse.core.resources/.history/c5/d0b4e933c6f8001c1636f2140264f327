@@ -1,0 +1,32 @@
+package com.douglas.service;
+
+import com.douglas.model.Animal;
+import com.douglas.model.Atendimento;
+import com.douglas.model.Tutor;
+import com.douglas.notifica.Envio;
+
+public class EmisaoNotaDeServico {
+	
+	private Envio envio;
+
+	public EmisaoNotaDeServico(Envio envio) {
+		super();
+		this.envio = envio;
+	}
+
+	public Envio getEnvio() {
+		return envio;
+	}
+	
+	public void emitir(Tutor tutor, Atendimento atendimento, Animal animal ) {
+		
+		this.envio.notifica(tutor, "Referente ao atendimento de: "+animal.getNome()+"; Raça: "
+		+animal.getRaca()+"; Idade:"+animal.getIdade()+". Foi realizado em: "+atendimento.data
+		+" o procedimento de: "+atendimento.getDescricaoConsulta()+" no valor de: "+atendimento.getPreco() );
+	}
+	
+	
+	
+	
+
+}
